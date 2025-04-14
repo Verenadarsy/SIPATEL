@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kesehatan Telinga Anda</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <style>
+        .swiper-slide:nth-child(1) {
+            background-image: url('/static/images/image1.jpg'); /* Ganti dengan URL gambar Anda */
+            background-size: cover;
+            background-position: center;
+        }
+        .swiper-slide:nth-child(2) {
+            background-image: url('/static/images/image3.jpg'); /* Ganti dengan URL gambar Anda */
+            background-size: cover;
+            background-position: center;
+        }
+        .swiper-slide:nth-child(3) {
+            background-image: url('/static/images/image2.jpg'); /* Ganti dengan URL gambar Anda */
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <section class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide text-center py-20 text-white">
+                <h2 class="text-3xl font-bold">Lindungi Pendengaran Anda</h2>
+                <p class="mt-4 text-lg">Suara keras dapat merusak telinga. Jaga selalu volume suara.</p>
+            </div>
+            <div class="swiper-slide text-center py-20 text-white">
+                <h2 class="text-3xl font-bold">Bersihkan Telinga dengan Benar</h2>
+                <p class="mt-4 text-lg">Gunakan kain lembut, hindari cotton bud terlalu dalam.</p>
+            </div>
+            <div class="swiper-slide text-center py-20 text-white">
+                <h2 class="text-3xl font-bold">Periksa Telinga Rutin</h2>
+                <p class="mt-4 text-lg">Kunjungi dokter THT untuk pemeriksaan berkala.</p>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <header class="bg-blue-100 text-center py-8">
+        <h1 class="text-3xl font-bold text-blue-700">Jaga Kesehatan Telinga Anda</h1>
+        <p class="mt-2 text-lg text-gray-600">Temukan informasi dan tips penting untuk menjaga kesehatan telinga Anda.</p>
+    </header>
+
+    <section class="max-w-3xl mx-auto p-8">
+        <h2 class="text-2xl font-semibold text-blue-700 mb-4">Mengapa Kesehatan Telinga Penting?</h2>
+        <p class="text-gray-700 mb-6">Telinga adalah organ penting yang memungkinkan kita mendengar dan menjaga keseimbangan. Kesehatan telinga yang baik sangat penting untuk kualitas hidup yang optimal.</p>
+
+        <h2 class="text-2xl font-semibold text-blue-700 mb-4">Tips Menjaga Kesehatan Telinga</h2>
+        <ul class="list-disc list-inside text-gray-700 mb-6">
+            <li>Hindari suara keras yang berlebihan.</li>
+            <li>Bersihkan telinga dengan hati-hati, jangan gunakan cotton bud terlalu dalam.</li>
+            <li>Lindungi telinga dari air saat berenang.</li>
+            <li>Periksakan telinga secara rutin ke dokter THT.</li>
+            <li>Istirahatkan telinga secara teratur setelah mendengarkan musik atau suara keras.</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold text-blue-700 mb-4">Gejala Gangguan Pendengaran</h2>
+        <p class="text-gray-700 mb-6">Waspadai gejala-gejala berikut:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-6">
+            <li>Kesulitan mendengar percakapan, terutama di tempat ramai.</li>
+            <li>Mendengar suara berdenging (tinnitus).</li>
+            <li>Telinga terasa penuh atau tersumbat.</li>
+            <li>Sakit telinga atau keluar cairan dari telinga.</li>
+        </ul>
+
+        <a href="/deteksi" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-6">Deteksi Penyakit Anda</a>
+    </section>
+
+    <footer class="bg-blue-100 text-center py-4">
+        <p class="text-gray-600">&copy; 2024 Kesehatan Telinga Anda. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+</body>
+</html>
