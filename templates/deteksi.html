@@ -57,27 +57,39 @@
         }
 
         .btn-custom {
-            background-color: #f8bce4;
+            background: linear-gradient(90deg, #f694c1, #4a6da7);
             border: none;
-            color: rgb(60, 80, 195);
-            padding: 0.6rem 1.5rem;
-            border-radius: 10px;
+            border-radius: 8px;
+            padding: 10px 20px;
+            color: white !important;
             font-weight: 500;
-            transition: background 0.3s ease;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .btn-custom:hover {
-            background-color: #3a5fe0;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(90deg, #e685b5, #3a5d97);
         }
 
         .btn-secondary {
-            background-color: #f8bce4;
-            color: #3c4da8;
+            background: linear-gradient(90deg, #f694c1, #4a6da7);
             border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            color: white !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .btn-secondary:hover {
-            background-color: #b2c5ff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(90deg, #e685b5, #3a5d97);
         }
 
         .btn-custom, .btn-secondary {
@@ -91,7 +103,7 @@
     <div class="card-custom row g-0">
         <!-- LEFT SIDE: IMAGE -->
         <div class="col-md-5 img-section">
-            <img src="{{ url_for('static', filename='/static/images/image2.jpg') }}" alt="Ilustrasi Telinga">
+            <img src="{{ url_for('static', filename='images/image4.jpg') }}" alt="Ilustrasi Telinga">
         </div>
 
         <!-- RIGHT SIDE: FORM -->
