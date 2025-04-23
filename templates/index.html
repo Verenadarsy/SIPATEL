@@ -8,20 +8,157 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <style>
+        body {
+            background: linear-gradient(120deg, #fdd6e3 0%, #d4e7f7 100%);
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Swiper slider styling */
+        .swiper {
+            height: 350px;
+            margin-bottom: 0;
+        }
+
+        .swiper-slide {
+            position: relative;
+        }
+
         .swiper-slide:nth-child(1) {
-            background-image: url('/static/images/image1.jpg'); /* Ganti dengan URL gambar Anda */
+            background-image: url('/static/images/image1.jpg');
             background-size: cover;
             background-position: center;
         }
+        
         .swiper-slide:nth-child(2) {
-            background-image: url('/static/images/image3.jpg'); /* Ganti dengan URL gambar Anda */
+            background-image: url('/static/images/image3.jpg');
             background-size: cover;
             background-position: center;
         }
+        
         .swiper-slide:nth-child(3) {
-            background-image: url('/static/images/image2.jpg'); /* Ganti dengan URL gambar Anda */
+            background-image: url('/static/images/image2.jpg');
             background-size: cover;
             background-position: center;
+        }
+
+        .swiper-slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.27);
+            z-index: 1;
+        }
+
+        .swiper-slide h2, .swiper-slide p {
+            position: relative;
+            z-index: 2;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Header styling */
+        header {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px 0;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: #4a6da7;
+            font-weight: 700;
+        }
+
+        /* Main content section styling */
+        section.max-w-3xl {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #4a6da7;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #f694c1, #4a6da7);
+            border-radius: 3px;
+        }
+
+        /* List styling */
+        ul.list-disc {
+            list-style-type: none;
+            padding-left: 5px;
+        }
+
+        ul.list-disc li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        ul.list-disc li::before {
+            content: '•';
+            color: #f694c1;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Button styling */
+        a.inline-block {
+            background: linear-gradient(90deg, #f694c1, #4a6da7);
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            color: white !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        a.inline-block:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(90deg, #e685b5, #3a5d97);
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px 20px 0 0;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .swiper {
+                height: 300px;
+            }
+            
+            section.max-w-3xl {
+                padding: 20px;
+                margin: 0 15px 30px;
+            }
         }
     </style>
 </head>
